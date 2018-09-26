@@ -9,6 +9,7 @@ def initialize(one, two, three)
 end
 
 puts "ONE:::: #{@one}"
+
 def kind
   if @one == @two && @two == @three 
     :equilateral
