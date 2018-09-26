@@ -16,14 +16,12 @@ def kind
     :isosceles
   elsif @one != @two && @three != @two
     :scalene
-  elsif @one == 0 
+  else
     # begin
         raise TriangleError
       # rescue TriangleError => error
       #     puts error.message
       # end
-  else 
-      nil
   end 
 end
 
