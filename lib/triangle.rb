@@ -8,9 +8,10 @@ def initialize(one, two, three)
   @three = three
 end
 
-puts "ONE:::: #{@one}"
 
 def kind
+  puts "ONE:::: #{@one}"
+
   if @one == @two && @two == @three 
     :equilateral
   elsif (@one == @two && @two != @three) || (@two == @three && @two != @one) || (@one == @three && @one != @two)
