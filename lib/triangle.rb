@@ -18,7 +18,6 @@ def kind
     :isosceles
   elsif (@one != @two && @three != @two && @one != @three) && @one > 0 && @two > 0 && @three > 0
     :scalene
-
   else 
     nil
   end
