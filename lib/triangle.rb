@@ -10,8 +10,6 @@ end
 
 
 def kind
-  puts "ONE:::: #{@one}"
-
   if @one == @two && @one == @three && @two == @three && @one != 0
     :equilateral
   elsif (@one == @two && @two != @three) || (@two == @three && @two != @one) || (@one == @three && @one != @two)
