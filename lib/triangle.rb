@@ -17,7 +17,7 @@ def kind
   elsif @one != @two && @three != @two
     :scalene
   elsif @one == 0 
-    begin
+    # begin
         raise TriangleError
       # rescue TriangleError => error
       #     puts error.message
