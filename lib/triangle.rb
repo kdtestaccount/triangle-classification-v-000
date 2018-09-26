@@ -13,7 +13,9 @@ def kind
   puts "ONE:::: #{@one}"
 
   if @one == @two && @two == @three 
-    :equilateral
+    raise TriangleError
+      rescue TriangleError => error
+      puts error.message
   elsif (@one == @two && @two != @three) || (@two == @three && @two != @one) || (@one == @three && @one != @two)
     :isosceles
   elsif @one != @two && @three != @two
