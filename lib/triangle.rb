@@ -21,6 +21,8 @@ def kind
         raise TriangleError
       rescue TriangleError => error
         puts error.message
+  else 
+    nil
     end
   end 
 end
