@@ -18,9 +18,9 @@ def kind
     :scalene
   elsif @one == 0
     begin
-        raise TriangleError
+      raise TriangleError
       rescue TriangleError => error
-        # puts error.message
+      puts error.message
   else 
     nil
     end
