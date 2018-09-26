@@ -17,11 +17,11 @@ def kind
   elsif @one != @two && @three != @two
     :scalene
   else
-    # begin
+    begin
         raise TriangleError
-      # rescue TriangleError => error
-      #     puts error.message
-      # end
+      rescue TriangleError => error
+      puts error.message
+      end
   end 
 end
 
