@@ -16,7 +16,7 @@ def kind
     :isosceles
   elsif @one != @two && @three != @two
     :scalene
-  elsif @one == @one  
+  elsif @one == 0 || @two == 0 || @three == 0 
     begin
         raise TriangleError
        rescue TriangleError => error
