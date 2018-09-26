@@ -12,7 +12,7 @@ end
 def kind
   if @one == @two && @one == @three && @two == @three && @one != 0
     :equilateral
-  elsif @one <= 1 || @one + @two <= @three || @one + @three <= @two || @two + @three <= @one
+  elsif @one <= 0 || @one + @two <= @three || @one + @three <= @two || @two + @three <= @one
     raise TriangleError
   elsif (@one == @two && @two != @three) || (@two == @three && @two != @one) || (@one == @three && @one != @two)
     :isosceles
