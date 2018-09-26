@@ -12,12 +12,13 @@ end
 def kind
   if @one == @two && @one == @three && @two == @three && @one != 0
     :equilateral
+  elsif @one <= 1 || @one + @two <= @three || @one + @three <= @two || @two + @three <= @one
+    raise TriangleError
   elsif (@one == @two && @two != @three) || (@two == @three && @two != @one) || (@one == @three && @one != @two)
     :isosceles
   elsif (@one != @two && @three != @two && @one != @three) && @one > 0 && @two > 0 && @three > 0
     :scalene
-  elsif @one <= 1 || @one + @two <= @three || @one + @three <= @two || @two + @three <= @one
-    raise TriangleError
+
   else 
     nil
   end
