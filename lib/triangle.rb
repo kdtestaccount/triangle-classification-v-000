@@ -19,9 +19,9 @@ def kind
   elsif @one == 0 
     begin
         raise TriangleError
-       rescue TriangleError => error
-          puts error.message
-      end
+      # rescue TriangleError => error
+      #     puts error.message
+      # end
   else 
       nil
   end 
