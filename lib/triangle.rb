@@ -22,9 +22,8 @@ def kind
     raise TriangleError
   else 
     nil
-    end
-  end 
-end
+  end
+  end
 
 
 
